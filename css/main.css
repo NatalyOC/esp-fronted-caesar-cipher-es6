@@ -1,7 +1,6 @@
-.fixed {
-  [type="checkbox"] {
-    + label {   
-      pointer-events: auto;
-    }
-  }
+/*Estilos para el resultado*/
+.text-style{
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
 }

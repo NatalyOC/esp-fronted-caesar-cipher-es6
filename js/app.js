@@ -27,10 +27,10 @@ $(document).ready(function() {
     let result = '';
     if ($option == 'cipher') {
       result = cipher($text.val().toUpperCase());
-      var output = '<p>El Texto cifrado es : ' + result + '</p>';
+      var output = '<p class="text-style">El Texto cifrado es : ' + result + '</p>';
     } else {
       result = decipher($text.val().toUpperCase());
-      output = '<p>El Texto descifrado es : ' + result + '</p>';
+      output = '<p class="text-style">El Texto descifrado es : ' + result + '</p>';
     }
     $('#text-result').html(output);
   });

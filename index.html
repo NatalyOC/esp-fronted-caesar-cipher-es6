@@ -12,14 +12,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
   <div class="container">
     <br>
     <br>
-    <h1 class="header center orange-text">Caesar-Cipher</h1>
     <div class="row">
-      <form class="col s12 offset-m3 m6 l4" action="#" id="form-cipher">
+      <div class="col s12 offset-l3 l6 offset-m3 m6 center-align">
+        <img src="assets/es6.png" alt="es6" class="responsive-img">
+      </div>
+    </div>
+    <h1 class="header center-align orange-text">Caesar-Cipher-ES6</h1>
+    <div class="row">
+      <br>
+      <form class="col s12 offset-m3 m6 offset-l3 l6" action="#" id="form-cipher">
         <div class="row">
           <p>
             <input name="action" type="radio" id="text-cipher" value="cipher" />
@@ -33,16 +38,19 @@
         </div>
         <div class="row">
           <div class="col s12 l12">
-            <input placeholder="" id="input-text" type="text" >
+            <input placeholder="Ingrese Texto a cifrar o descifrar" id="input-text" type="text" >
           </div>
-          <input type="button" id="button-action" value="Enviar" class="btn waves-effect waves-green" disabled="true">
-          <input type="button" id="button-clean" value="Limpiar" class="btn waves-effect waves-green" >
+        </div>
+        <div class="row">  
+          <div class="col s12 l12">
+            <input type="button" id="button-action" value="Enviar" class="btn waves-effect waves-green" disabled="true">
+            <input type="button" id="button-clean" value="Limpiar" class="btn waves-effect waves-green" >
+          </div>
         </div>
       </form>
     </div>
     <div class="row">
-      <div id="text-result">
-        
+      <div id="text-result" class="col s12 m12 l12">        
       </div>
     </div>
   </div>
@@ -50,5 +58,4 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
 </body>
-
 </html>
