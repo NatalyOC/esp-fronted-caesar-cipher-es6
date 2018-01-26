@@ -22,24 +22,20 @@
       <form class="col s12 offset-m3 m6 l4" action="#">
         <div class="row">
           <p>
-            <input name="action" type="radio" id="text-cipher" />
-            <label for="text-cipher">Cifrar</label>
+            <input name="action" type="radio" id="text-cipher" value="cipher" />
+            <label for="text-cipher">Cipher</label>
           </p>
           <p>
-            <input name="action" type="radio" id="text-decipher" />
-            <label for="text-decipher">Descifrar</label>
+            <input name="action" type="radio" id="text-decipher" value="decipher" />
+            <label for="text-decipher">Decipher</label>
           </p>
-          <div class="input-field col l12">
-
-          </div>
           <br>
         </div>
         <div class="row">
-          <div class="input-field col s12 l12">
-            <input placeholder="" id="input-text" type="text" class="validate">
-            <label for="first_name">Ingrese frase</label>
+          <div class="col s12 l12">
+            <input placeholder="" id="input-text" type="text" >
           </div>
-          <input type="button" value="Enviar" class="btn waves-effect waves-green">
+          <input type="button" id="button-action" value="Enviar" class="btn waves-effect waves-green" disabled="true">
         </div>
       </form>
     </div>

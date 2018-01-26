@@ -1,0 +1,7 @@
+.fixed {
+  [type="checkbox"] {
+    + label {   
+      pointer-events: auto;
+    }
+  }
+}
