@@ -15,6 +15,9 @@ $(document).ready(function() {
     validateOption = true;
     activateButton();
   });
+  $('#button-clean').on('click', function() {
+    $('#form-cipher').submit();
+  });
   function activateButton() {
     if (validateOption && validateText) {
       $('#button-action').prop('disabled', false);
@@ -23,10 +26,10 @@ $(document).ready(function() {
   $('#button-action').on('click', function() {
     let result = '';
     if ($option == 'cipher') {
-      result = cipher($text.val());
+      result = cipher($text.val().toUpperCase());
       var output = '<p>El Texto cifrado es : ' + result + '</p>';
     } else {
-      result = decipher($text.val());
+      result = decipher($text.val().toUpperCase());
       output = '<p>El Texto descifrado es : ' + result + '</p>';
     }
     $('#text-result').html(output);
